@@ -36,6 +36,11 @@ OPENSSL_INCLUDE_PATH = os.path.realpath(
     os.path.join(SCRIPT_PATH, OPENSSL_DIR, 'include'))
 OPENSSL_LIB_PATH = os.path.realpath(
     os.path.join(SCRIPT_PATH, OPENSSL_DIR, 'binary', 'win_vc14', PLATFORM, 'lib'))
+	
+ICU_INCLUDE_PATH = os.path.realpath(
+    os.path.join(SCRIPT_PATH, ICU_DIR, 'icu_win_release_v140.64.2.0', 'include'))
+ICU_LIB_PATH = os.path.realpath(
+    os.path.join(SCRIPT_PATH, ICU_DIR, 'icu_win_release_v140.64.2.0', 'binary', 'win_vc14', PLATFORM, 'lib'))
 
 BUILD_ENV = os.environ.copy()
 # BUILD_ENV['QMAKE_CXXFLAGS'] = '-DWIN_VER=0x0601 -D_WIN32_WINNT=0x0601'
@@ -58,7 +63,9 @@ shutil.copy(JOM,
 subprocess.check_call(
     CONFIGURE +
     ' -openssl ' 
-    ' -I \"' + OPENSSL_INCLUDE_PATH + '\" ' +
+    ' -I \"' + OPENSSL_INCLUDE_PATH + '\" '
+    ' -icu ' 
+    ' -I \"' + ICU_INCLUDE_PATH + '\" -L \"' + ICU_LIB_PATH + '\"'
     ' -platform win32-msvc ' 
     ' -opengl dynamic ' 
     ' -plugin-sql-sqlite -qtlibinfix _Ad_5_12 -qt-libjpeg -qt-zlib '

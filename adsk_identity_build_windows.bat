@@ -40,8 +40,26 @@ echo ===========================================================================
 echo.
 
 echo ===========================================================================
+echo Prepare for ICU
+copy %EXTERNAL_DIR%\icu\icu_win_release_v140.64.2.0\binary\win_vc14\%TARGET_PLATFORM%\bin\ICUIN64.dll %~dp0\qtbase\bin 	
+copy %EXTERNAL_DIR%\icu\icu_win_release_v140.64.2.0\binary\win_vc14\%TARGET_PLATFORM%\bin\ICUUC64.dll %~dp0\qtbase\bin 	
+copy %EXTERNAL_DIR%\icu\icu_win_release_v140.64.2.0\binary\win_vc14\%TARGET_PLATFORM%\bin\ICUDT64.dll %~dp0\qtbase\bin 	
+echo Done
+echo ===========================================================================
+echo.
+
+echo ===========================================================================
 echo Start building python script
 python adsk_identity_build_windows.py
+echo Done
+echo ===========================================================================
+echo.
+
+echo ===========================================================================
+echo Copy ICU dlls
+copy %EXTERNAL_DIR%\icu\icu_win_release_v140.64.2.0\binary\win_vc14\%TARGET_PLATFORM%\bin\ICUIN64.dll dist\Qt\5.9.2\bin
+copy %EXTERNAL_DIR%\icu\icu_win_release_v140.64.2.0\binary\win_vc14\%TARGET_PLATFORM%\bin\ICUUC64.dll dist\Qt\5.9.2\bin
+copy %EXTERNAL_DIR%\icu\icu_win_release_v140.64.2.0\binary\win_vc14\%TARGET_PLATFORM%\bin\ICUDT64.dll dist\Qt\5.9.2\bin
 echo Done
 echo ===========================================================================
 echo.
