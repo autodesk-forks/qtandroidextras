@@ -57,9 +57,9 @@ echo.
 
 echo ===========================================================================
 echo Copy ICU dlls
-copy %EXTERNAL_DIR%\icu\icu_win_release_v140.64.2.0\binary\win_vc14\%TARGET_PLATFORM%\bin\ICUIN64.dll dist\Qt\5.9.2\bin
-copy %EXTERNAL_DIR%\icu\icu_win_release_v140.64.2.0\binary\win_vc14\%TARGET_PLATFORM%\bin\ICUUC64.dll dist\Qt\5.9.2\bin
-copy %EXTERNAL_DIR%\icu\icu_win_release_v140.64.2.0\binary\win_vc14\%TARGET_PLATFORM%\bin\ICUDT64.dll dist\Qt\5.9.2\bin
+copy %EXTERNAL_DIR%\icu\icu_win_release_v140.64.2.0\binary\win_vc14\%TARGET_PLATFORM%\bin\ICUIN64.dll dist\Qt\5.12.2\bin
+copy %EXTERNAL_DIR%\icu\icu_win_release_v140.64.2.0\binary\win_vc14\%TARGET_PLATFORM%\bin\ICUUC64.dll dist\Qt\5.12.2\bin
+copy %EXTERNAL_DIR%\icu\icu_win_release_v140.64.2.0\binary\win_vc14\%TARGET_PLATFORM%\bin\ICUDT64.dll dist\Qt\5.12.2\bin
 echo Done
 echo ===========================================================================
 echo.
