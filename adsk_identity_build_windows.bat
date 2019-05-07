@@ -67,7 +67,7 @@ echo.
 echo ===========================================================================
 echo Start packaging
 cd dist
-7z a -t7z %WORKSPACE%\stage\5.12.0-identity-Qt-%BUILD_NUMBER%-win-vc140-10.0.10586.0.7z *
+REM 7z a -t7z %WORKSPACE%\stage\5.12.0-identity-Qt-%BUILD_NUMBER%-win-vc140-10.0.10586.0.7z *
 echo Done
 echo ===========================================================================
 echo.
