@@ -26,7 +26,7 @@
 	depends = qtbase
 	recommends = qttools
 	path = qtscript
-	url = ../qtscript.git
+	url = https://code.qt.io/qt/qtscript.git
 	branch = 5.15.2
 	status = deprecated
 [submodule "qtmultimedia"]
@@ -129,7 +129,7 @@
 	depends = qtbase
 	recommends = qtdeclarative
 	path = qtwayland
-	url = ../qtwayland.git
+	url = https://code.qt.io/qt/qtwayland.git
 	branch = 5.15.2
 	status = addon
 [submodule "qt3d"]
@@ -155,7 +155,7 @@
 	depends = qtdeclarative
 	recommends = qtgraphicaleffects
 	path = qtquickcontrols
-	url = ../qtquickcontrols.git
+	url = https://code.qt.io/qt/qtquickcontrols.git
 	branch = 5.15.2
 	status = addon
 [submodule "qtserialbus"]
@@ -242,28 +242,28 @@
 	depends = qtbase
 	recommends = qtdeclarative qtandroidextras
 	path = qtpurchasing
-	url = ../qtpurchasing.git
+	url = https://code.qt.io/qt/qtpurchasing.git
 	branch = 5.15.2
 	status = addon
 [submodule "qtcharts"]
 	depends = qtbase
 	recommends = qtdeclarative qtmultimedia
 	path = qtcharts
-	url = ../qtcharts.git
+	url = https://code.qt.io/qt/qtcharts.git
 	branch = 5.15.2
 	status = addon
 [submodule "qtdatavis3d"]
 	depends = qtbase
 	recommends = qtdeclarative qtmultimedia
 	path = qtdatavis3d
-	url = ../qtdatavis3d.git
+	url = https://code.qt.io/qt/qtdatavis3d.git
 	branch = 5.15.2
 	status = addon
 [submodule "qtvirtualkeyboard"]
 	depends = qtbase qtdeclarative qtsvg
 	recommends = qtmultimedia qtquickcontrols
 	path = qtvirtualkeyboard
-	url = ../qtvirtualkeyboard.git
+	url = https://code.qt.io/qt/qtvirtualkeyboard.git
 	branch = 5.15.2
 	status = addon
 [submodule "qtgamepad"]
@@ -289,7 +289,7 @@
 [submodule "qtnetworkauth"]
 	depends = qtbase
 	path = qtnetworkauth
-	url = ../qtnetworkauth.git
+	url = https://code.qt.io/qt/qtnetworkauth.git
 	branch = 5.15.2
 	status = addon
 [submodule "qtremoteobjects"]
@@ -303,13 +303,13 @@
 	depends = qtbase qtwebsockets
 	recommends = qtdeclarative
 	path = qtwebglplugin
-	url = ../qtwebglplugin.git
+	url = https://code.qt.io/qt/qtwebglplugin.git
 	branch = 5.15.2
 	status = addon
 [submodule "qtlottie"]
 	depends = qtbase qtdeclarative
 	path = qtlottie
-	url = ../qtlottie.git
+	url = https://code.qt.io/qt/qtlottie.git
 	branch = 5.15.2
 	status = addon
 [submodule "qtquicktimeline"]
@@ -321,6 +321,6 @@
 [submodule "qtquick3d"]
 	depends = qtbase qtdeclarative
 	path = qtquick3d
-	url = ../qtquick3d.git
+	url = https://code.qt.io/qt/qtquick3d.git
 	branch = 5.15.2
 	status = addon
